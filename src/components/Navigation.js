@@ -1,8 +1,13 @@
 // src/components/Navigation.js
-import React from 'react';
+import React, { useState }  from 'react';
 import './Navigation.css';
 
 const Navigation = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
     return (
         <nav className="navigation">
             <div className="logo">
@@ -14,7 +19,7 @@ const Navigation = () => {
                 <li><a href="#habilidades">HABILIDADES</a></li>
                 <li><a href="#portafolio">PORTAFOLIO</a></li>
             </ul>
-            <div className="hamburger">
+             <div className="hamburger" onClick={toggleMenu}>
                 <span></span>
                 <span></span>
                 <span></span>

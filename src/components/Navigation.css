@@ -11,8 +11,6 @@
     height: 200px;
     top: 0;
     z-index: 1000;
-    margin-bottom: 10px;
-    margin-right: 20px;
 }
 
 .logo {
@@ -37,8 +35,18 @@
     list-style: none;
 }
 
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .nav-links li {
     margin: 0 18px;
+    padding: 10px 15px;
 }
 
 .nav-links a {
@@ -64,6 +72,30 @@
 
 .App {
     padding-top: 60px; /* Ajustar este valor según la altura del navigation */
+}
+
+@media only screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+        z-index: 1001; /* Asegura que el botón esté encima del menú */
+    }
+
+    .navigation ul {
+        display: none; /* Esconde el menú hasta que se haga clic en el botón */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Justo debajo de la barra de navegación */
+        left: 0;
+        right: 0;
+        background-color: #000;
+        padding: 20px;
+    }
+
+    .navigation ul.active {
+        display: flex; /* Muestra el menú cuando está activo */
+    }
 }
 
 @media (max-width: 768px) {
