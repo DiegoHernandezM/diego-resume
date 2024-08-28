@@ -1,0 +1,85 @@
+/* src/components/Home.css */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    padding: 0 50px;
+    position: relative;
+}
+
+.home-content {
+    text-align: center;
+}
+
+.name {
+    font-size: 96px;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.description-container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0px 20px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.description {
+    font-size: 18px;
+    margin: 10px;
+    line-height: 2.5;
+    text-align: center;
+}
+
+.first-name {
+    color: #fff;
+}
+
+.last-name {
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    text-stroke: 1px #fff;
+}
+
+.home-button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #004999;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.social-icons a {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #0066cc;
+}

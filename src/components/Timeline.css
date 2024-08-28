@@ -1,0 +1,72 @@
+/* src/components/Timeline.css */
+.highlight {
+    color: #0066cc;
+    font-size: 50px;
+}
+
+.experience-title {
+    font-size: 60px;
+}
+
+.timeline-container {
+    display: flex;
+    justify-content: center;
+    padding: 0px 20px;
+    background-color: #0E1212;
+}
+
+.timeline {
+    width: 70%;
+    color: #fff;
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    border-left: 4px solid #0066cc;
+    padding-left: 20px;
+}
+
+.timeline-content {
+    text-align: left;
+    max-width: 70%;
+}
+
+.timeline-date {
+    max-width: 30%;
+    text-align: right;
+    font-style: italic;
+    color: #ccc;
+}
+
+.timeline-content h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.timeline-content h4 {
+    margin: 5px 0;
+    font-size: 18px;
+    font-weight: normal;
+    color: #ccc;
+}
+
+.timeline-content p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #999;
+}
+
+.timeline-content ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.timeline-content li {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #fff;
+}
