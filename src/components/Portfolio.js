@@ -12,7 +12,7 @@ const Portfolio = () => {
             title: "Aviation insight",
             subtitle: "App desarrollada para estudiar mediante examenes administrables.",
             image: "/images/1.jpg",
-            url: "https://atp-front.vercel.app/"
+            url: "https://atp.aviationinsight.net/"
         },
         {
             title: "KIOSKO CCP",
