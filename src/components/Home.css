@@ -104,13 +104,13 @@
     }
 }
 
-@media (max-width: 425px){
+@media (max-width: 545px){
     .home {
-        display: flex;
+        display: block;
         justify-content: center;
         align-items: center;
-        height: 80vh;
-        top: 0px;
+        height: 100vh;
+        top: 9px;
         background-color: #000;
         color: #fff;
         padding: 0 50px;

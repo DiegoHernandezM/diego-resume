@@ -116,3 +116,59 @@
         text-align: left;
     }
 }
+
+@media (max-width: 585px){
+    .experience-container {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        height: 120vh;
+        top: -60px;
+        background-color: #000;
+        color: #fff;
+        padding: 0 50px;
+        position: relative;
+    }
+    .highlight {
+        font-size: 45px;
+    }
+
+    .experience-content h3 {
+        font-size: 18px;
+    }
+
+    .experience-content h4 {
+        font-size: 14px;
+    }
+
+    .experience-content p {
+        font-size: 12px;
+    }
+
+    .experience-date p {
+        font-size: 12px;
+    }
+
+    .experience-content li {
+        font-size: 12px;
+    }
+
+    .experience-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        justify-content: center;
+        margin-left: 75px;
+    }
+
+    .experience-card {
+        background-color: #111;
+        border-radius: 10px;
+        width: 300px; /* Ajusta el tamaño de las tarjetas */
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+    }
+}

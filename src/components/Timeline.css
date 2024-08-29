@@ -118,13 +118,13 @@
     }
 }
 
-@media (max-width: 425px){
+@media (max-width: 585px){
     .timeline-container {
-        display: flex;
+        display: block;
         justify-content: center;
         align-items: center;
-        height: 230vh;
-        top: 0px;
+        height: 310vh;
+        top: -30px;
         background-color: #0E1212;
         color: #fff;
         padding: 0 50px;
