@@ -1,9 +1,10 @@
 /* src/components/Home.css */
 .home {
-    display: flex;
+    display: relative;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    top: 100px;
     background-color: #000;
     color: #fff;
     padding: 0 50px;
@@ -82,4 +83,50 @@
 
 .social-icons a:hover {
     color: #0066cc;
+}
+
+@media (max-width: 768px){
+    .home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        top: 0px;
+        background-color: #000;
+        color: #fff;
+        padding: 0 50px;
+        position: relative;
+    }
+    .name {
+        font-size: 56px;
+        margin: 0;
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 425px){
+    .home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        top: 0px;
+        background-color: #000;
+        color: #fff;
+        padding: 0 50px;
+        position: relative;
+    }
+
+    .name {
+        font-size: 40px;
+        margin: 0;
+        line-height: 1.2;
+    }
+
+    .description {
+        font-size: 14px;
+        margin: 10px;
+        line-height: 1.5;
+        text-align: center;
+    }
 }

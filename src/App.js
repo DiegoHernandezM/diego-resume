@@ -1,6 +1,7 @@
 // src/App.js
 import React from 'react';
 import Navigation from './components/Navigation';
+import MobileNavigation from './components/MobileNavigation';
 import Home from "./components/Home";
 import Timeline from "./components/Timeline";
 import Experience from "./components/Experience";
@@ -11,6 +12,7 @@ function App() {
     return (
         <div className="App">
             <Navigation />
+            <MobileNavigation />
             <div className="divider"></div>
             <section id="inicio"></section>
             <Home />

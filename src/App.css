@@ -51,125 +51,21 @@ html {
 }
 
 @media only screen and (max-width: 768px) {
-
-    * {
-        box-sizing: border-box;
-    }
-
-    body, html {
-        overflow-x: hidden;
-        margin: 0;
-        padding: 0;
-    }
-
-    .container, .experience-section, .home-section {
-        width: 100%;
-        max-width: 100%;
-        margin: 0 auto;
-        padding: 0;
-    }
-    .portfolio-section, .experience-section {
-        padding: 50px 20px; /* Ajusta el padding para que haya espacio alrededor de la sección */
-        margin-bottom: 50px; /* Añade un margen inferior para evitar superposiciones */
-        position: relative; /* Asegura que el posicionamiento sea relativo y no absoluto */
-        z-index: 1; /* Asegura que las secciones no se superpongan */
-    }
-
-    /* Ajusta el margen superior de las secciones si es necesario */
-    .portfolio-section {
-        margin-top: 50px;
-    }
-
-    .experience-section {
-        margin-top: 50px;
-    }
-    .portfolio-grid, .experience-grid {
-        overflow: hidden; /* Asegura que nada se desborde fuera de su contenedor */
-        margin-bottom: 30px; /* Añade espacio entre el grid y la siguiente sección */
-    }
-    /* Ajusta el tamaño del texto para caber en pantallas más pequeñas */
-    .portfolio-title,
-    .experience-title,
-    .home-title,
-    .description-container,
-    .modal-title {
-        font-size: 24px; /* Reduce el tamaño de la fuente */
-        text-align: center; /* Asegura que el texto esté centrado */
-    }
-
-    /* Ajusta la sección de descripción */
-    .description-container {
-        width: 90%; /* Ocupa más espacio en la pantalla */
-        padding: 0 10px; /* Reduce el padding */
-    }
-
-    .portfolio-grid, .experience-grid {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-    }
-
-    .portfolio-card, .experience-card {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    /* Ajusta el tamaño de las tarjetas de experiencia */
-    .experience-card {
-        width: 100%; /* Las tarjetas ocupan todo el ancho del contenedor */
-        margin-bottom: 20px; /* Añade espacio entre las tarjetas */
-    }
-
-    /* Ajusta las imágenes y tarjetas en el portafolio */
-    .portfolio-grid {
-        grid-template-columns: 1fr; /* Las tarjetas se apilan una debajo de otra */
-    }
-
-    .portfolio-card {
-        height: 250px; /* Reduce la altura de las tarjetas para que quepan en la pantalla */
-    }
-
-    .portfolio-image {
-        height: 100%; /* Asegura que las imágenes se ajusten al tamaño de la tarjeta */
-        object-fit: cover; /* Asegura que la imagen no se deforme */
-    }
-
-    /* Ajusta el tamaño del texto en las tarjetas del portafolio */
-    .portfolio-overlay h3 {
-        font-size: 18px; /* Reduce el tamaño del texto */
-    }
-
-    .portfolio-overlay p {
-        font-size: 14px; /* Reduce el tamaño del texto */
-    }
-
-    /* Ajusta el tamaño de los iconos de redes sociales */
-    .social-icons {
+    .navigation {
         display: flex;
-        justify-content: center; /* Centra los iconos en la pantalla */
-        margin: 10px 0;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        background-color: #000;
+        color: #fff;
+        position: fixed !important;
+        width: 100%;
+        height: 90px;
+        top: 0;
+        z-index: 1000;
     }
-
-    .social-icons a {
-        margin: 0 10px; /* Añade espacio entre los iconos */
-        font-size: 20px; /* Ajusta el tamaño de los iconos */
-    }
-
-    /* Ajusta la sección de nombre y título principal */
-    .home-title h1 {
-        font-size: 36px; /* Reduce el tamaño del título */
-        text-align: center; /* Centra el título */
-    }
-
-    .home-title h2 {
-        font-size: 28px; /* Reduce el tamaño del subtítulo */
-        text-align: center; /* Centra el subtítulo */
+    .logo span {
+        font-size: 20px;
+        font-weight: bold;
     }
 }
-
