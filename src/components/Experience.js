@@ -5,8 +5,8 @@ import { FaServer, FaLaptopCode, FaConnectdevelop } from 'react-icons/fa';
 
 const Experience = () => {
     return (
-        <section className="experience">
-            <div className="experience-container">
+        <section className="experience-container">
+            <div className="experience">
                 <h2 className="experience-title">
                     Mis <span className="highlight">Habilidades</span>
                 </h2>

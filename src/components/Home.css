@@ -1,14 +1,14 @@
 /* src/components/Home.css */
 .home {
-    display: relative;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     top: 100px;
     background-color: #000;
     color: #fff;
-    padding: 0 50px;
     position: relative;
+    width: 100%;
 }
 
 .home-content {

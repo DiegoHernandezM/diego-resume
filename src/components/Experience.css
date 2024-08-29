@@ -1,20 +1,19 @@
 /* src/components/Experience.css */
-.experience {
-    padding: 10px 0;
-    background-color: #000;
-    color: #fff;
+.experience-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    text-align: center;
+    height: 50vh;
+    top: 0px;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    width: 100%;
 }
 
-.experience-container {
-    max-width: 80%; /* Define el ancho máximo del container */
-    width: 100%;
-    padding: 0 20px; /* Añade algo de padding lateral para evitar que el contenido toque los bordes */
-    height: 550px;
+.highlight {
+    color: #0066cc;
+    font-size: 50px;
 }
 
 .experience-title {
@@ -23,29 +22,22 @@
     text-align: left;
 }
 
-.experience-subtitle {
-    display: block;
-    color: #0066cc;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.highlight {
-    color: #0066cc;
+.experience {
+    width: 70%;
+    color: #fff;
 }
 
 .experience-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 50px;
     justify-content: center;
 }
 
 .experience-card {
     background-color: #111;
-    padding: 20px;
     border-radius: 10px;
-    width: 500px; /* Ajusta el tamaño de las tarjetas */
+    width: 300px; /* Ajusta el tamaño de las tarjetas */
     position: relative;
     display: flex;
     flex-direction: column;
@@ -69,11 +61,58 @@
     margin-bottom: 10px;
 }
 
-.card-number {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    font-size: 48px;
-    color: rgba(255, 255, 255, 0.1);
-    font-weight: bold;
+@media (max-width: 768px){
+    .experience-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 120vh;
+        top: 0px;
+        background-color: #000;
+        color: #fff;
+        padding: 0 50px;
+        position: relative;
+    }
+
+    .highlight {
+        font-size: 45px;
+    }
+
+    .experience-content h3 {
+        font-size: 18px;
+    }
+
+    .experience-content h4 {
+        font-size: 14px;
+    }
+
+    .experience-content p {
+        font-size: 12px;
+    }
+
+    .experience-date p {
+        font-size: 12px;
+    }
+
+    .experience-content li {
+        font-size: 12px;
+    }
+
+    .experience-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .experience-card {
+        background-color: #111;
+        border-radius: 10px;
+        width: 300px; /* Ajusta el tamaño de las tarjetas */
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+    }
 }

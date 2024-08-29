@@ -52,7 +52,7 @@ const Timeline = () => {
     return (
         <section className="timeline-container">
             <div className="timeline">
-                <h2 className="experience-title">
+                <h2 className="timeline-title">
                     Mí <span className="highlight">Experiencia</span>
                 </h2>
                 {experiences.map((exp, index) => (

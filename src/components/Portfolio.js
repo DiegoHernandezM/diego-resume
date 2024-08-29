@@ -39,8 +39,8 @@ const Portfolio = () => {
     };
 
     return (
-        <section className="portfolio-section">
-            <div className="portfolio-container">
+        <section className="portfolio-container">
+            <div className="portfolio">
                 <h2 className="portfolio-title">
                     Mí <span className="highlight">Portafolio</span>
                 </h2>
