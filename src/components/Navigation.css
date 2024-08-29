@@ -103,6 +103,7 @@
         width: 100%;
         background: #0E1212;
         z-index: 1000;
+        list-style: none;
     }
 
     .ulNavigationMobile a {
